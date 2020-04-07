@@ -53,5 +53,13 @@ abstract class _LoginStoreBase with Store {
 
     loading = false;
     loggedIn = true;
+
+    email = "";
+    password = "";
+  }
+
+  @action
+  void logout() {
+    loggedIn = false;
   }
 }
